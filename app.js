@@ -17,120 +17,86 @@ let mpoint;
 
 if ( bn > 0 && bn < 33) {
     bgread = 'F';
+    bpoint = 0.00;
 } else if ( bn >= 33 && bn < 40){
     bgread = 'D';
+    bpoint = 1.00;
 } else if ( bn >= 40 && bn < 50){
     bgread = 'C';
+    bpoint = 2.00;
 } else if ( bn >= 50 && bn < 60){
     bgread = 'B';
+    bpoint = 3.00;
 } else if ( bn >= 60 && bn < 70){
     bgread = 'A-';
+    bpoint = 3.50;
 } else if ( bn >= 70 && bn < 80){
     bgread = 'A';
+    bpoint = 4.00;
 } else if ( bn >= 80 && bn < 100){
     bgread = 'A+';
+    bpoint = 5.00;
 } else{
     bgread = 'Invalid Gread'
+    bpoint = 'Invalid Gread'
 }
 //english subject dynamic Gread Condition
 
 if ( en > 0 && en < 33) {
     egread = 'F';
+    epoint = 0.00;
 } else if ( en >= 33 && en < 40){
     egread = 'D';
+    epoint = 1.00;
 } else if ( en >= 40 && en < 50){
     egread = 'C';
+    epoint = 2.00;
 } else if ( en >= 50 && en < 60){
     egread = 'B';
+    epoint = 3.00;
 } else if ( en >= 60 && en < 70){
     egread = 'A-';
+    epoint = 3.50;
 } else if ( en >= 70 && en < 80){
     egread = 'A';
+    epoint = 4.00;
 } else if ( en >= 80 && en < 100){
     egread = 'A+';
+    epoint = 5.00;
 } else{
     egread = 'Invalid Gread'
+    epoint = 'Invalid Gread'
 }
 
 //Math subject dynamic Gread Condition
 
 if ( mt > 0 && mt < 33) {
     mgread = 'F';
-} else if ( mt >= 33 && mt < 40){
-    mgread = 'D';
-} else if ( mt >= 40 && mt < 50){
-    mgread = 'C';
-} else if ( mt >= 50 && mt < 60){
-    mgread = 'B';
-} else if ( mt >= 60 && mt < 70){
-    mgread = 'A-';
-} else if ( mt >= 70 && mt < 80){
-    mgread = 'A';
-} else if ( mt >= 80 && mt < 100){
-    mgread = 'A+';
-} else{
-    mgread = 'Invalid Gread'
-}
-
-//Bangla subject dynamic point Condition
-
-if ( bn > 0 && bn < 33) {
-    bpoint = 0.00;
-} else if ( bn >= 33 && bn < 40){
-    bpoint = 1.00;
-} else if ( bn >= 40 && bn < 50){
-    bpoint = 2.00;
-} else if ( bn >= 50 && bn < 60){
-    bpoint = 3.00;
-} else if ( bn >= 60 && bn < 70){
-    bpoint = 3.50;
-} else if ( bn >= 70 && bn < 80){
-    bpoint = 4.00;
-} else if ( bn >= 80 && bn < 100){
-    bpoint = 5.00;
-} else{
-    bpoint = 'Invalid Gread'
-}
-
-//English subject dynamic point Condition
-
-if ( en > 0 && en < 33) {
-    epoint = 0.00;
-} else if ( en >= 33 && en < 40){
-    epoint = 1.00;
-} else if ( en >= 40 && en < 50){
-    epoint = 2.00;
-} else if ( en >= 50 && en < 60){
-    epoint = 3.00;
-} else if ( en >= 60 && en < 70){
-    epoint = 3.50;
-} else if ( en >= 70 && en < 80){
-    epoint = 4.00;
-} else if ( en >= 80 && en < 100){
-    epoint = 5.00;
-} else{
-    epoint = 'Invalid Gread'
-}
-
-//math subject dynamic point Condition
-
-if ( mt > 0 && mt < 33) {
     mpoint = 0.00;
 } else if ( mt >= 33 && mt < 40){
+    mgread = 'D';
     mpoint = 1.00;
 } else if ( mt >= 40 && mt < 50){
+    mgread = 'C';
     mpoint = 2.00;
 } else if ( mt >= 50 && mt < 60){
+    mgread = 'B';
     mpoint = 3.00;
 } else if ( mt >= 60 && mt < 70){
+    mgread = 'A-';
     mpoint = 3.50;
 } else if ( mt >= 70 && mt < 80){
+    mgread = 'A';
     mpoint = 4.00;
 } else if ( mt >= 80 && mt < 100){
+    mgread = 'A+';
     mpoint = 5.00;
 } else{
+    mgread = 'Invalid Gread'
     mpoint = 'Invalid Gread'
 }
+
+
 
 let gpa = bpoint+epoint+mpoint;
 let total_gpa = gpa /3;
